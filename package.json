@@ -1,6 +1,6 @@
 {
-  "name": "@tsf/admin",
-  "version": "0.0.1",
+  "name": "tsf-admin",
+  "version": "1.0.0",
   "description": "",
   "type": "module",
   "scripts": {
