@@ -1,10 +1,16 @@
 import './commands'
+import { IPlugin } from '@orion-framework/core';
 
-class AdminServerModule {
-    constructor() {
-      console.log("Admin Module (Server) Initialized");
-     
+export default class AdminServerPlugin implements IPlugin{
+  name = "AdminServerPlugin";
+
+    load() {
+      console.log(`${this.name} initialized.`);
+      // Plugin-spezifische Initialisierung
+    }
+  
+    unload() {
+      console.log(`${this.name} entladen.`);
+      // Cleanup-Logik
     }
   }
-  
-  export default AdminServerModule;
