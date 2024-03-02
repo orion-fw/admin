@@ -1,12 +1,13 @@
 {
     "compilerOptions": {
-      "target": "ES2020",
       "esModuleInterop": true,
       "allowSyntheticDefaultImports": true,
-      "module": "CommonJS",
+      "module": "NodeNext",
+      "target": "ES2020",
       "types": ["@citizenfx/server", "@types/node"],
       "lib": ["ES2020"],
       "skipLibCheck": true,
+      "moduleResolution": "nodenext",
       "strict": false, // Disables strict type-checking options
       "noImplicitAny": false, // Allow expressions and declarations with an implied 'any' type
       "noImplicitThis": false, // Allow 'this' expressions with an implied 'any' type

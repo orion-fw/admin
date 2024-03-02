@@ -7,11 +7,13 @@ const TARGET_ENTRIES = [
     target: "node18",
     entryPoints: ["src/server/index.ts"],
     platform: "node",
+    format: "esm",
     outfile: "./dist/server/index.js",
   },
   {
     target: "es2020",
     entryPoints: ["src/client/index.ts"],
+    format: "esm",
     outfile: "./dist/client/index.js",
   },
 ];

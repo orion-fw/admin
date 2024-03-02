@@ -1,1 +1,1 @@
-import './test.command';
+import './spawnveh.command';

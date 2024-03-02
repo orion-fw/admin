@@ -1,7 +1,7 @@
-class AdminModule {
+class AdminClientModule {
     constructor() {
       console.log("Admin Module (Client) Initialized");
     }
   }
   
-  export default AdminModule;
+  export default AdminClientModule;
