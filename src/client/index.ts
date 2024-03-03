@@ -1,7 +1,17 @@
-class AdminClientModule {
-    constructor() {
-      console.log("Admin Module (Client) Initialized");
+import { IPlugin } from '@orion-framework/core';
+import './commands'
+class AdminClientPlugin implements IPlugin{
+  name = "AdminClientPlugin";
+
+    load() {
+      console.log(`${this.name} initialized.`);
+      // Plugin-spezifische Initialisierung
+    }
+  
+    unload() {
+      console.log(`${this.name} entladen.`);
+      // Cleanup-Logik
     }
   }
-  
-  export default AdminClientModule;
+
+  export { AdminClientPlugin };

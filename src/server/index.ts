@@ -1,7 +1,7 @@
 import './commands'
 import { IPlugin } from '@orion-framework/core';
 
-export default class AdminServerPlugin implements IPlugin{
+class AdminServerPlugin implements IPlugin{
   name = "AdminServerPlugin";
 
     load() {
@@ -14,3 +14,5 @@ export default class AdminServerPlugin implements IPlugin{
       // Cleanup-Logik
     }
   }
+
+  export { AdminServerPlugin}

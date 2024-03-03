@@ -2,10 +2,9 @@ import {registerCommand} from '@orion-framework/core';
 
 registerCommand('spawnveh', (source, args, raw) => {
   if(!args[0]){
-    console.error('ERROR! You should use /spawnveh <vehicleName> <color>');
+    console.log('ERROR! You should use /spawnveh <vehicleName> <color>');
     return;
   }
-
   const model: string = args[0].toString()
   const playerPosition: number[] = GetEntityCoords(GetPlayerPed(source));
 
@@ -22,6 +21,7 @@ registerCommand('spawnveh', (source, args, raw) => {
         SetVehicleCustomPrimaryColour(createdVehicle, 0, 0, 0);
         SetVehicleCustomSecondaryColour(createdVehicle, 0, 0, 0);
 }, {
+  adminLevel: 0,
   description: 'Spawn a vehicle at your position',
   arguments: [
     {
